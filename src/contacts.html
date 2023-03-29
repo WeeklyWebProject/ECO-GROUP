@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+  @@include('html/head.html', { "title": "Контакты" })
+  <body>
+    <div id="wrapper" class="wrapper no-home">
+      @@include('html/header.html', {}) 
+      <main>  
+        <div class="info-page">
+          <div class="container">
+            <div class="info-page__wrap">
+              <h2 class="page-title">Контакты</h2> 
+              <ul class="breadcrumbs"> 
+                <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link">Главная</a>
+                </li>  
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__text">Контакты</span>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>   
+        <div class="contacts">
+            <div class="container">
+                <div class="contacts__wrap">
+                    <div class="contacts__left">
+                        <div class="contacts__img">
+                            <img src="./img/map.png" alt="Карта">
+                        </div>
+                    </div>
+                    <div class="contacts__right">
+                        <div class="contacts__desc">
+                            Компульсивность отчуждает архетип, здесь описывается централизующий процесс или создание нового центра личности. 
+                            Всякая психическая функция в культурном развитии ребенка появляется на сцену дважды, в двух планах, сперва социальном, потом психологическом, 
+                            следовательно закон аннигилирует депрессивный архетип. Закон вызывает интеракционизм.
+                        </div>
+                        <div class="contacts__row">
+                            <div class="contacts__block">
+                                <div class="contacts__item"> 
+                                    <div class="contacts__label">Адрес: </div> 
+                                    <div class="contacts__location">
+                                        г. Тюмень, Воронинские горки 142/4 
+                                        оф, 34,37 (3 этаж)
+                                    </div>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="contacts__label">Режим работы:</div> 
+                                    <div class="contacts__inner">
+                                        <span>Пн- Пт: 09.00 - 18.00 Сб: 10.00 - 18.00</span>
+                                        <span>Вс: выходной</span>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__row">
+                            <div class="contacts__block">
+                                <div class="contacts__item">
+                                    <div class="contacts__label">Почта</div> 
+                                    <a href="mailto:info@septik-tmn.ru" class="contacts__email">info@septik-tmn.ru</a>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="contacts__label">Мы в социальных сетях</div>
+                                    <div class="contacts__box">
+                                        <a href="/" target="_blank" class="contacts__link">
+                                            <img src="./img/icons/telegram-footer.png" alt="telegram">
+                                        </a>
+                                        <a href="/" target="_blank" class="contacts__link">
+                                            <img src="./img/icons/whatsapp-footer.png" alt="whatsapp">
+                                        </a>
+                                        <a href="/" target="_blank" class="contacts__link">
+                                            <img src="./img/icons/viber-footer.png" alt="viber">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__row">
+                            <div class="contacts__block contacts__block--last">
+                                <div class="contacts__item">
+                                    <a href="mailto:+73452578058" class="contacts__phone">+7 (3452) 578-058</a>
+                                </div>
+                                <div class="contacts__item">
+                                    <a href="+79088740039" class="contacts__phone">+7 (908) 874 00-39</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"></div>
+        <div class="consult-row consult-row--nomargin">
+          <div class="container">
+            <div class="consult-row__wrap">
+              <div class="consult-row__inner">
+                <h2 class="consult-row__title">Нужна консультация? Обращайтесь к нам!</h2>
+                <div class="consult-row__subtitle">Действие параллельно аннигилирует феноменологический импульс</div>
+              </div>
+              <button type="button" class="consult-row__btn modal-feedback-js">ЗАКАЗАТЬ ЗВОНОК</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      @@include('html/popup.html', {})
+    </div> 
+    <script src="js/lib/webp.js"></script> 
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/noUIslider.min.js"></script> 
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+  @@include('html/head.html', { "title": "Новости и статьи" })
+  <body>
+    <div id="wrapper" class="wrapper no-home">
+      @@include('html/header.html', {}) 
+      <main>  
+        <div class="info-page">
+          <div class="container">
+            <div class="info-page__wrap">
+              <h2 class="page-title">НОВОСТИ И СТАТЬИ</h2> 
+              <ul class="breadcrumbs"> 
+                <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link">Главная</a>
+                </li>  
+                <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link">Новости и статьи</a>
+                </li>  
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__text">Традиционное участие в выставке и заслуженная награда</span>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>    
+        <div class="news-post post-project">
+            <div class="container">
+                <div class="news-post__wrap">
+                    <div class="news-post__inner ">
+                        <div class="news-post__left">
+                            <div class="news-post__img">
+                                <img src="./img/projects/1.png" alt="Традиционное участие в выставке и заслуженная награда">
+                            </div>
+                        </div>
+                        <div class="news-post__right">
+                            <div class="news-post__header project-header"> 
+                                <a href="#" class="news-post__prev"><< Предыдущая новость </a>
+                                <a href="#" class="news-post__next">Следующая новость >></a>
+                            </div>
+                            <h1 class="news-post__title project-title">
+                                <span class="project-title__top">Объект д.Ожогино, ул. Садовая </span>
+                                <span class="project-title__down">06.04.2018</span>
+                            </h1>
+                            <div class="news-post__img post__img--mobile">
+                                <img src="./img/projects/1.png" alt="Традиционное участие в выставке и заслуженная награда">
+                            </div>
+                            <p class="news-post__text">
+                                Монтаж УОСВ ТОПАС-10 ПР и дренажного колодца из ЖБ колец 3 м.<br>
+                                Стоимость строительства 100000
+                            </p> 
+                        </div>
+                    </div> 
+                    <div class="project-post__report">
+                        <h2 class="project-post__title">ФОТООТЧЕТ</h2>
+                        <div class="project-post__inner">
+                            <div class="project-post__item">
+                                <img src="./img/portfolio/9.png" alt="ФОТООТЧЕТ">
+                            </div>
+                            <div class="project-post__item">
+                                <img src="./img/portfolio/8.png" alt="ФОТООТЧЕТ">
+                            </div>
+                            <div class="project-post__item">
+                                <img src="./img/portfolio/7.png" alt="ФОТООТЧЕТ">
+                            </div>
+                            <div class="project-post__item">
+                                <img src="./img/portfolio/6.png" alt="ФОТООТЧЕТ">
+                            </div>
+                            <div class="project-post__item">
+                                <img src="./img/portfolio/5.png" alt="ФОТООТЧЕТ">
+                            </div>
+                            <div class="project-post__item">
+                                <img src="./img/portfolio/4.png" alt="ФОТООТЧЕТ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-post__row pagination-post">
+                        <a href="#" class="news-post__prev"><< Предыдущая новость </a>
+                        <a href="#" class="news-post__next">Следующая новость >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="consult-row consult-row--nomargin">
+          <div class="container">
+            <div class="consult-row__wrap">
+              <div class="consult-row__inner">
+                <h2 class="consult-row__title">Нужна консультация? Обращайтесь к нам!</h2>
+                <div class="consult-row__subtitle">Действие параллельно аннигилирует феноменологический импульс</div>
+              </div>
+              <button type="button" class="consult-row__btn modal-feedback-js">ЗАКАЗАТЬ ЗВОНОК</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      @@include('html/popup.html', {})
+    </div> 
+    <script src="js/lib/webp.js"></script> 
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/noUIslider.min.js"></script> 
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

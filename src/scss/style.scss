@@ -1,0 +1,221 @@
+// Обнуление
+@import "nullstyle";
+// Подключение шрифтов
+@import "fonts";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext);
+// Переменные 
+
+$maxWidthContainer: 1224px;
+// Базовые настройки
+
+:root {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Lato';  
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+}
+
+body {
+    width: auto;
+    height: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
+    background-color: #fff;
+} 
+.wrapper {
+    main {
+        @media (max-width: 576px){
+            padding-top: 100px; 
+          }
+          @media (max-width: 474px) { 
+            padding-top: 88px; 
+          }
+          @media (max-width: 413px) { 
+            padding-top: 79px; 
+          }
+          @media (max-width: 374px) { 
+            padding-top: 68px; 
+          }
+    }
+}
+
+.no-scroll {
+    overflow: hidden
+}
+
+.container {
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    padding: 0 16px;
+    @media (max-width: 576px) {
+        padding: 0 30px; 
+    }
+    
+    @media (max-width: 474px) {
+        padding: 0 27px; 
+    }
+    @media (max-width: 413px) {
+        padding: 0 24px; 
+    }
+    @media (max-width: 374px) {
+        padding: 0 20px; 
+    }
+}  
+
+.title-block {
+    color: #242424;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 500; 
+    line-height: 32px;
+    text-align: center; 
+    @media (max-width: 576px) { 
+    } 
+    @media (max-width: 474px) { 
+        font-size: 31px;  
+        line-height: 35px;
+    }
+    @media (max-width: 413px) { 
+        font-size: 28px; 
+        font-weight: 500;
+    }
+    @media (max-width: 374px) {   
+        font-size: 24px;
+        font-weight: 500; 
+    } 
+}
+
+.slick-track {
+    display: flex
+}
+.slick-list{
+    overflow: hidden
+}
+
+.no-home{
+    .header__bottom{
+        display: none;
+    }
+}
+
+.info-page {
+    width: 100%;  
+    background-color: #43b02a;
+    margin-bottom: 40px;
+
+    // .info-page__wrap
+
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 137px;
+        padding: 35px 0;  
+        
+        @media(max-width: 576px){  
+            height: auto;
+        }
+    }
+} 
+.page-title {  
+    color: #ffffff; 
+    font-size: 36px;
+    font-weight: 400; 
+    line-height: 1;
+    text-align: center; 
+    text-transform: uppercase;
+    // margin-bottom: 18px;
+    @media(max-width: 576px){  
+        font-size: 36px;
+        font-weight: 400; 
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    @media(max-width: 414px){  
+        font-size: 25px;
+        font-weight: 400; 
+        line-height: 28px;
+    }
+} 
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    @media(max-width: 576px){  
+        flex-wrap: wrap;
+    }
+
+    // .breadcrumbs__item
+
+    &__item {
+    }
+
+    // .breadcrumbs__link
+
+    &__link { 
+        position: relative;
+        color: #ffffff; 
+        font-size: 16px;
+        font-weight: 400; 
+        line-height: 1;
+        padding-right: 10px;
+        margin-right: 3px; 
+        @media(max-width: 414px){  
+            font-size: 14px;
+        }
+        &:after {
+            content: '/';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    // .breadcrumbs__text
+
+    &__text {
+        color: #ffffff; 
+        font-size: 16px;
+        font-weight: 400; 
+        line-height: 1;
+        @media(max-width: 414px){  
+            font-size: 14px;
+        }
+    }
+}
+
+.filter-open{ 
+    left: 0 !important;
+}
+
+// Подключение стилей 
+@import "header";
+@import "index";  
+@import "catalog";  
+@import "card";  
+@import "reviews";  
+@import "services";  
+@import "services-item";  
+@import "contacts";  
+@import "aboutus";  
+@import "employees";  
+@import "certificate";  
+@import "news";  
+@import "news-post";  
+@import "discount-archive";  
+@import "discount-post";  
+@import "portfolio";  
+@import "portfolio-post";  
+@import "projects";  
+@import "projects-post";  
+@import "footer";  
+@import "popup";  
+@import "animation";  
+@import "rangeSlider";  

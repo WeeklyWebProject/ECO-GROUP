@@ -1,0 +1,33 @@
+@keyframes showFixedHeader {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0; 
+    }
+}
+@keyframes hideFixedHeader {
+    0% {
+        top: 0;  
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+@keyframes showModal {
+    0% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes hideModal {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-150%);
+    }
+}

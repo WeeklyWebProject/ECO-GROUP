@@ -1,0 +1,232 @@
+<div class="fixed-header">
+    <div class="fixed-header__row">
+        <div class="container">
+            <div class="fixed-header__wrap">
+                <a href="/" class="fixed-header__logo">
+                    <picture><source srcset="../img/logo.svg" type="image/webp"><img src="../img/logo.svg" alt="Компания ЭКО-ГРУПП"></picture>
+                </a>       
+                <div class="fixed-header__inner">
+                    <ul class="fixed-header__nav">
+                        <li class="fixed-header__item drop">
+                            <a href="/" class="fixed-header__link">КАТАЛОГ ТОВАРОВ</a>
+                            <ul class="drop__list">
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">КАТАЛОГ ТОВАРОВ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">КАТАЛОГ ТОВАРОВ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">КАТАЛОГ ТОВАРОВ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">КАТАЛОГ ТОВАРОВ</a>
+                                </li>
+                              </ul>
+                        </li>
+                        <li class="fixed-header__item drop">
+                            <a href="/" class="fixed-header__link">О КОМПАНИИ</a>
+                            <ul class="drop__list">
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">О КОМПАНИИ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">О КОМПАНИИ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">О КОМПАНИИ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">О КОМПАНИИ</a>
+                                </li>
+                              </ul>
+                        </li>
+                        <li class="fixed-header__item drop">
+                            <a href="/" class="fixed-header__link">УСЛУГИ</a>
+                            <ul class="drop__list">
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">УСЛУГИ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">УСЛУГИ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">УСЛУГИ</a>
+                                </li>
+                                <li class="drop__item">
+                                  <a href="/" class="drop__link">УСЛУГИ</a>
+                                </li>
+                              </ul>
+                        </li>
+                        <li class="fixed-header__item">
+                            <a href="/" class="fixed-header__link">АКЦИИ</a>
+                        </li>
+                        <li class="fixed-header__item">
+                            <a href="/" class="fixed-header__link">НОВОСТИ</a>
+                        </li>
+                        <li class="fixed-header__item">
+                            <a href="/" class="fixed-header__link">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="fixed-header__search">
+                        <picture><source srcset="../img/icons/loop.webp" type="image/webp"><img src="../img/icons/loop.png" alt="Поиск"></picture>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="drop-search">
+                <div class="container">
+                    <form id="search-form" class="header__search search" action="" method="post"> 
+                        <input type="text" class="search__field" name="search-field" id="search-field" placeholder="Поиск" required="">
+                        <button type="submit" class="search__btn">
+                          <picture><source srcset="../img/icons/loop.webp" type="image/webp"><picture><source srcset="../img/icons/loop.webp" type="image/webp"><img src="../img/icons/loop.png" alt="Кнопка"></picture></picture>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="feadback-modal">
+    <div class="feadback-modal__wrap">
+        <div class="feadback-modal__header">
+            <h3 class="feadback-modal__title">Отправить заявку</h3>
+            <span class="feadback-modal__close">
+                <picture><source srcset="../img/icons/close.webp" type="image/webp"><img src="../img/icons/close.png" alt="Закрыть"></picture>
+            </span>
+        </div>
+        <div class="feadback-modal__body">
+            <form id="feadback-form" class="feadback-modal__form" action="" method="post"> 
+                <input type="text" class="feadback-modal__field" name="feadback-name" id="feadback-name" placeholder="Имя*" required=""> 
+                <input type="text" class="feadback-modal__field" name="feadback-phone" id="feadback-phone" placeholder="Телефон*" required="">
+                <textarea name="feadback-comment" id="feadback-comment" class="feadback-modal__comment" placeholder="Комментарий"></textarea>
+                <div class="feadback-modal__row">
+                    <label class="feadback-modal__label">
+                        <input type="checkbox" class="feadback-modal__check" name="feedback-checkbox" id="feedback-checkbox" required="">
+                        <span class="feadback-modal__box"></span>
+                    </label>
+                    <p class="feadback-modal__text">
+                        Cогласие с <a href="/" class="feadback-modal__link">политикой конфиденциальности</a>
+                    </p>
+                </div>
+                <button type="submit" class="feadback-modal__btn">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu">
+    <div class="mobile-menu__wrap">
+        <div class="mobile-menu__header">
+            <button type="button" class="mobile-menu__btn selected-menu" data-tab="menu-tab">МЕНЮ</button>
+            <button type="button" class="mobile-menu__btn" data-tab="catalog-tab">КАТАЛОГ</button>
+        </div>
+        <div class="mobile-menu__body"> 
+            <div class="mobile-menu__inner">
+                <div class="mobile-menu__col menu-tab active-menu">
+                    <a href="/" class="mobile-menu__item current-page">ГЛАВНАЯ</a>
+                    <a href="/" class="mobile-menu__item">О КОМПАНИИ</a>
+                    <div class="mobile-menu__item mobille-drop">
+                        <div class="mobille-drop__title">УСЛУГИ</div>
+                        <ul class="mobille-drop__list">
+                            <li class="mobille-drop__item">
+                                <a href="/" class="mobille-drop__link">УСЛУГИ 1</a>
+                            </li>
+                            <li class="mobille-drop__item">
+                                <a href="/" class="mobille-drop__link">УСЛУГИ 2</a>
+                            </li>
+                            <li class="mobille-drop__item">
+                                <a href="/" class="mobille-drop__link">УСЛУГИ 3</a>
+                            </li>
+                            <li class="mobille-drop__item">
+                                <a href="/" class="mobille-drop__link">УСЛУГИ 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu__item mobille-drop">
+                        <div class="mobille-drop__title">АКЦИИ</div>
+                        <ul class="mobille-drop__list">
+                            <li class="mobille-drop__item">
+                                <a href="/" class="mobille-drop__link">АКЦИИ 1</a>
+                            </li>
+                            <li class="mobille-drop__item">
+                                <a href="/" class="mobille-drop__link">АКЦИИ 2</a>
+                            </li>
+                            <li class="mobille-drop__item">
+                                <a href="/" class="mobille-drop__link">АКЦИИ 3</a>
+                            </li>
+                            <li class="mobille-drop__item">
+                                <a href="/" class="mobille-drop__link">АКЦИИ 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="/" class="mobile-menu__item">НОВОСТИ</a>
+                    <a href="/" class="mobile-menu__item">КОНТАКТЫ</a>
+                </div>
+                <ul class="mobile-menu__col catalog-tab">
+                    <a href="/" class="mobile-menu__item">КАНАЛИЗАЦИИ</a> 
+                    <a href="/" class="mobile-menu__item">КЕССОНЫ</a>
+                    <a href="/" class="mobile-menu__item">ПОГРЕБ</a>
+                    <a href="/" class="mobile-menu__item">ЖИРОУЛОВИТЕЛИ</a>
+                    <a href="/" class="mobile-menu__item">БИОПРЕПАРАТЫ</a>
+                </ul>
+                <div class="mobile-menu__search">
+                    <form id="search-form" class="header__search search" action="" method="post"> 
+                        <input type="text" class="search__field" name="search-field" id="search-field" placeholder="Поиск" required="">
+                        <button type="submit" class="search__btn">
+                            <picture><source srcset="../img/icons/loop.webp" type="image/webp"><img src="../img/icons/loop.png" alt="Кнопка"></picture>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mobile-menu__contacts">
+                <div class="footer__contacts footer-contacts">
+                    <div class="footer-contacts__location">
+                        <span class="footer-contacts__icon"> 
+                            <picture><source srcset="../img/icons/location.webp" type="image/webp"><img src="../img/icons/location.png" alt="Адрес"></picture>
+                        </span>
+                        <div class="footer-contacts__text">Тюмень, Воронинские горки 142/4 оф. 34</div>
+                    </div>
+                    <div class="footer-contacts__phone">
+                        <span class="footer-contacts__icon">
+                            <picture><source srcset="../img/icons/phone.webp" type="image/webp"><img src="../img/icons/phone.png" alt="Телефон"></picture>
+                        </span>
+                        <p>
+                            Телефон: 
+                            <a href="tel:+79044955129" class="footer-contacts__text">+7 (9044) 955-129</a> 
+                        </p> 
+                    </div>
+                    <div class="footer-contacts__email">
+                        <span class="footer-contacts__icon">
+                            <picture><source srcset="../img/icons/mail.webp" type="image/webp"><img src="../img/icons/mail.png" alt="Почта"></picture>
+                        </span>
+                        <p>
+                            E-mail:
+                            <a href="mailto:septik72@mail.ru" class="footer-contacts__text">septik72@mail.ru</a> 
+                        </p> 
+                    </div>
+                </div>
+                <div class="footer__messenger footer-messenger">
+                    <div class="footer-messenger__text">
+                        Мы в социальных сетях:
+                    </div>
+                    <div class="footer-messenger__inner">
+                        <a href="https://telegram.org/" target="_blank" class="footer-messenger__link">
+                            <picture><source srcset="../img/icons/telegram-footer.webp" type="image/webp"><img src="../img/icons/telegram-footer.png" alt="Telegram"></picture>
+                        </a>
+                        <a href="https://www.whatsapp.com/" target="_blank" class="footer-messenger__link">
+                            <picture><source srcset="../img/icons/whatsapp-footer.webp" type="image/webp"><img src="../img/icons/whatsapp-footer.png" alt="WhatsApp"></picture>
+                        </a>
+                        <a href="https://www.viber.com/ru/" target="_blank" class="footer-messenger__link">
+                            <picture><source srcset="../img/icons/viber-footer.webp" type="image/webp"><img src="../img/icons/viber-footer.png" alt="Viber"></picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="close-filter-panel">
+    
+</div>

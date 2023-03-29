@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+  @@include('html/head.html', { "title": "Все услуги" })
+  <body>
+    <div id="wrapper" class="wrapper no-home">
+      @@include('html/header.html', {}) 
+      <main>  
+        <div class="info-page">
+          <div class="container">
+            <div class="info-page__wrap">
+              <h2 class="page-title">НАШИ УСЛУГИ</h2> 
+              <ul class="breadcrumbs"> 
+                <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link">Главная</a>
+                </li> 
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__text">Услуги</span>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>   
+        <div class="services">
+            <div class="container">
+                <div class="services__wrap">
+                    <div class="services__left">
+                        <h1 class="services__title"> 
+                            <span class="services__title--top">Качественные услуги</span>
+                            <span class="services__title--down">по доступным ценам</span>
+                        </h1>
+                        <div class="services__desc">
+                            «ЭКО-Групп» является официальным представителем нескольких компаний – 
+                            У нас продажа, СЕПТИКОВ- ТОПАС, ТОПАЭРО, ТОПОЛЬ, ЕВРОЛОС БИО, АКВАЛОС, Кессоны для скважин, Жироуловители, 
+                            биопрепараты для септика и жироуловителя, погреб ТОПОЛ ЭКО. 
+                            Приобретать товары в нашей компании выгодно, так как мы провели исследование рынков и поставщиков, 
+                            и выбрали для Вас самое качественное и надежное оборудование. 
+                            И если вы хотите купить септик в Тюмени, то мы сможем предложить грамотное решение.
+                        </div>
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <a href="/services-item.html" class="services__link">
+                                    <span class="services__icon">
+                                        <img src="./img/icons/5.png" alt="Выезд специалиста на объект">
+                                    </span>
+                                    <span class="services__text">Выезд специалиста на объект</span>
+                                </a>
+                            </li>
+                            <li class="services__item">
+                                <a href="/services-item.html" class="services__link">
+                                    <span class="services__icon">
+                                        <img src="./img/icons/6.png" alt="Монтаж оборудования на объекте">
+                                    </span>
+                                    <span class="services__text">Монтаж оборудования на объекте</span>
+                                </a>
+                            </li>
+                            <li class="services__item">
+                                <a href="/services-item.html" class="services__link">
+                                    <span class="services__icon">
+                                        <img src="./img/icons/7.png" alt="Шеф-монтаж оборудования на объекте">
+                                    </span>
+                                    <span class="services__text">Шеф-монтаж оборудования на объекте</span>
+                                </a>
+                            </li>
+                            <li class="services__item">
+                                <a href="/services-item.html" class="services__link">
+                                    <span class="services__icon">
+                                        <img src="./img/icons/8.png" alt="Техническое и сервисное обслуживание, диагностика">
+                                    </span>
+                                    <span class="services__text">Техническое и сервисное обслуживание, диагностика</span>
+                                </a>
+                            </li>
+                            <li class="services__item">
+                                <a href="/services-item.html" class="services__link">
+                                    <span class="services__icon">
+                                        <img src="./img/icons/9.png" alt="Гарантийный ремонт оборудования">
+                                    </span>
+                                    <span class="services__text">Гарантийный ремонт оборудования</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__right">
+                        <div class="services__img services-img--first">
+                            <img src="./img/services/1.png" alt="Услуги">
+                        </div>
+                        <div class="services__img services-img--second">
+                            <img src="./img/services/2.png" alt="Услуги">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"></div>
+        <div class="consult-row consult-row--nomargin">
+          <div class="container">
+            <div class="consult-row__wrap">
+              <div class="consult-row__inner">
+                <h2 class="consult-row__title">Нужна консультация? Обращайтесь к нам!</h2>
+                <div class="consult-row__subtitle">Действие параллельно аннигилирует феноменологический импульс</div>
+              </div>
+              <button type="button" class="consult-row__btn modal-feedback-js">ЗАКАЗАТЬ ЗВОНОК</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      @@include('html/popup.html', {})
+    </div> 
+    <script src="js/lib/webp.js"></script> 
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/noUIslider.min.js"></script> 
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

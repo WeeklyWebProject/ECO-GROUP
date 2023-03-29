@@ -1,0 +1,24 @@
+/*-------- СТИЛИ ДЛЯ СТРАНИЦЫ НОВОСТИ И СТАТЬИ ВСЕ ------------*/
+
+.news-page {
+    margin-bottom: 80px;
+
+    // .news-page__wrap
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 30px;
+        @media(max-width: 576px){
+            width: 100%;
+            margin: 0 0 30px;
+        }
+    }
+    .news__item{
+        margin: 0 15px 30px;
+        @media(max-width: 576px){
+            width: 100%;
+            margin: 0 0 30px;
+        }
+    }
+} 

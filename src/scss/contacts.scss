@@ -1,0 +1,211 @@
+/*-------- СТИЛИ ДЛЯ СТРАНИЦЫ КОНТАКТОВ ------------*/
+
+.contacts {
+    margin-bottom: 80px;
+
+    // .contacts__wrap
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 576px){
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+        }
+    }
+
+    // .contacts__left
+
+    &__left {
+        width: 48.74%;
+        @media(max-width: 576px){ 
+            width: 100%;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 448px;
+            object-fit: cover;
+            object-position: 50%;
+            @media(max-width: 576px){  
+                height: 319px;
+             }
+        }
+    }
+
+    // .contacts__right
+
+    &__right {
+        width: 48.1%;
+        padding-top: 28px;
+        @media(max-width: 576px){ 
+            width: 100%;
+        }
+    }
+ 
+
+    // .contacts__img
+
+    &__img {
+        width: 100%;
+        height: 448px;
+        @media(max-width: 576px){  
+            height: 319px;
+         }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50%;
+        }
+    } 
+ 
+
+    // .contacts__desc
+
+    &__desc { 
+        color: #777777; 
+        font-size: 14px;
+        font-weight: 400; 
+        line-height: 18px; 
+        margin-bottom: 27px;
+    }
+
+    // .contacts__row
+
+    &__row {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        border-top: 1px solid rgba(185, 185, 185, .55);
+        padding-right: 22px; 
+        @media(max-width: 576px){   
+            border: 0;
+            padding: 0;
+        }
+        &:nth-last-child(1){
+            padding-bottom: 0;
+            border: 0;
+        }
+    }
+
+    // .contacts__block
+
+    &__block{ 
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -28px;
+        @media(max-width: 576px){  
+            flex-direction: column;
+            margin: 0;
+            
+        }
+    }
+
+    // .contacts__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 66px);
+        margin: 0 28px;
+        font-size: 14px;
+        font-weight: 400; 
+        line-height: 18px;  
+        color: #777777;
+        @media(max-width: 576px){   
+            width: 100%;
+            margin: 0;
+            border-top: 1px solid rgba(185, 185, 185, .55);
+            padding-top: 27px;
+            padding-bottom: 27px;
+            
+        }
+    } 
+    @media(max-width: 576px){   
+        .contacts__block--last{
+            .contacts__item{
+                &:nth-child(1){ 
+                    padding-bottom: 24px;
+                }
+                &:nth-last-child(1){
+                    padding-top: 0;
+                    border: 0;
+                    padding-bottom: 34px;
+                }
+            }
+        } 
+    }
+  
+
+    // .contacts__label
+
+    &__label { 
+        display: inline-flex;
+        font-size: 14px; 
+        line-height: 14px; 
+        font-weight: 700; 
+        margin-bottom: 10px;
+        color: #333333;
+    }
+
+    // .contacts__location
+
+    &__location{
+        @media(max-width: 576px){ 
+            max-width: 238px;
+        }
+    }
+
+    // .contacts__inner
+
+    &__inner { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .contacts__email
+
+    &__email {
+        font-size: 14px;
+        font-weight: 400; 
+        line-height: 18px;  
+        color: #777777;
+    }
+
+    // .contacts__box
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    // .contacts__link
+
+    &__link {
+        width: 21px;
+        height: 21px;
+        margin-right: 15px;
+        img {
+            object-fit: contain;
+            object-position: 50%;
+        }
+        &:nth-last-child(1){
+            margin-right: 0;
+        }
+    }
+
+    // .contacts__phone
+
+    &__phone {  
+        color: #43b02a;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700; 
+        line-height: 32px;
+        text-align: left; 
+    } 
+
+
+
+} 

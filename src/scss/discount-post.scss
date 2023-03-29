@@ -1,0 +1,7 @@
+/*-------- СТИЛИ ДЛЯ СТРАНИЦЫ ОДНОЙ АКЦИИ ------------*/
+.pagination-post{
+    display: none;
+    @media(max-width: 576px){
+        display: flex;
+    }
+}

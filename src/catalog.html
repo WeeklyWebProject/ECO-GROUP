@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="pl">
+  @@include('html/head.html', { "title": "Каталог" })
+  <body>
+    <div id="wrapper" class="wrapper no-home">
+      @@include('html/header.html', {}) 
+      <main>  
+        <div class="info-page">
+          <div class="container">
+            <div class="info-page__wrap">
+              <h2 class="page-title">КАТАЛОГ ТОВАРОВ</h2>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__text">Каталог</span>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="catalog">
+          <div class="container">
+            <div class="catalog__wrap">
+              <div class="catalog-content">
+                <div class="catalog-content__row">
+                  <div class="open-filer">
+                    <div class="open-filer__icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="open-filer__text">ПОКАЗАТЬ ФИЛЬТР</div>
+                  </div>
+                  <div class="catalog-content__sort catalog-sort">
+                    <div class="catalog-sort__title">Сортировка</div>
+                    <ul class="catalog-sort__list">
+                      <li class="catalog-sort__item current-sort">
+                        <span>Сортировка</span>
+                      </li>
+                      <li class="catalog-sort__item">
+                        <span>Сортировка 2</span>
+                      </li>
+                      <li class="catalog-sort__item">
+                        <span>Сортировка 3</span>
+                      </li>
+                      <li class="catalog-sort__item">
+                        <span>Сортировка 4</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="catalog-content__visiblie">
+                    <div class="catalog-content__view-page">
+                      <span>Показать:</span> 
+                      <button  type="button" class="count-page__btn current-count">12</button>
+                      <button  type="button" class="count-page__btn">24</button>
+                      <button  type="button" class="count-page__btn">48</button>
+                    </div>
+                    <div class="catalog-content__view">
+                      <button type="button" class="view-type__btn">
+                        <img src="./img/icons/grid_type.svg" alt="Сетка">
+                      </button>
+                      <button type="button" class="view-type__btn">
+                        <img src="./img/icons/grid_type.svg" alt="Сетка"> 
+                      </button>
+                      <button type="button" class="view-type__btn">
+                        <img src="./img/icons/grid_type.svg" alt="Сетка"> 
+                      </button>
+                    </div>
+                  </div>
+                  <div class="catalog-content__mobile-sort">
+
+                  </div>
+                </div>
+                <div class="catalog-content__products catalog-products">
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/1.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/2.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/3.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/4.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/1.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/2.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/3.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/4.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/1.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/2.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/3.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/4.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/1.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/2.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/3.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                  <div class="catalog-products__item">
+                    <a href="/product.html" class="catalog-products__img">
+                      <img src="./img/products/4.png" alt="Кессон Евролос 1">
+                    </a>
+                    <div class="catalog-products__inner">
+                      <a href="/product.html" class="catalog-products__title">Кессон Евролос 1</a>
+                      <div class="catalog-products__text">Кессоны</div>
+                      <div class="catalog-products__price">55 500 руб.</div>
+                      <a href="/product.html" class="catalog-products__order">ЗАКАЗАТЬ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-content__pagination content-pagination">
+                  <div class="content-pagination__inner">
+                    <!-- <a href="/" class="content-pagination__prev"> 
+                    </a> -->
+                    <ul class="content-pagination__list">
+                      <li class="content-pagination__item pagination-page--current">
+                        <a href="" class="content-pagination__link">1</a>
+                      </li>
+                      <li class="content-pagination__item">
+                        <a href="" class="content-pagination__link">2</a>
+                      </li>
+                      <li class="content-pagination__item">
+                        <a href="" class="content-pagination__link">3</a>
+                      </li>
+                      <li class="content-pagination__item">
+                        <a href="" class="content-pagination__link">4</a>
+                      </li>
+                      <li class="content-pagination__separator">...</li>
+                      <li class="content-pagination__item">
+                        <a href="" class="content-pagination__link">25</a>
+                      </li> 
+                      <li class="content-pagination__item">
+                        <a href="" class="content-pagination__link">26</a>
+                      </li>
+                      <li class="content-pagination__item">
+                        <a href="" class="content-pagination__link">27</a>
+                      </li>
+                    </ul>
+                    <a href="/" class="content-pagination__next"> 
+                    </a>
+                  </div>
+                </div>
+                <div class="catalog-content__desc">   
+                  <h2 class="catalog-content__title">
+                    Блок для сео текста
+                  </h2>
+                  <div class="catalog-content__text">
+                    <p>
+                      Лидерство иллюстрирует код. Этот концепт элиминирует концепт нормального, однако комплекс разрушаем. Бессознательное мгновенно.
+                    </p>
+                    <p>
+                      Компульсивность отчуждает архетип, здесь описывается централизующий процесс или создание нового центра личности. Всякая психическая функция в культурном развитии ребенка появляется на сцену дважды, в двух планах, сперва социальном, потом психологическом, следовательно закон аннигилирует депрессивный архетип. Закон вызывает интеракционизм.
+                    </p>
+                    <p>
+                      Страх, например, начинает архетип. Действие отчуждает сексуальный гештальт. Чем больше люди узнают друг друга, тем больше бихевиоризм аннигилирует гендер. Действие параллельно аннигилирует феноменологический импульс. Воспитание дает депрессивный генезис.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-sidebar">
+                <h3 class="catalog-sidebar__title">КАТАЛОГ ТОВАРОВ</h3>
+                <div class="catalog-sidebar__inner">
+                  <div class="sidebar-spoiler active-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      КАНАЛИЗАЦИЯ 
+                    </div>
+                    <ul class="sidebar-drop"> 
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Аквалос</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос био и про</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос грунт</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос эко</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Септик удача</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топас</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топаэро</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Комплектующие</a>
+                      </li>
+                    </ul>
+                  </div> 
+                  <div class="sidebar-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      КЕССОНЫ 
+                    </div>
+                    <ul class="sidebar-drop"> 
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Аквалос</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос био и про</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос грунт</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос эко</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Септик удача</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топас</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топаэро</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Комплектующие</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      ПОГРЕБ 
+                    </div>
+                    <ul class="sidebar-drop"> 
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Аквалос</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос био и про</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос грунт</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос эко</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Септик удача</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топас</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топаэро</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Комплектующие</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      ЖИРОУЛОВИТЕЛИ 
+                    </div>
+                    <ul class="sidebar-drop"> 
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Аквалос</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос био и про</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос грунт</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос эко</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Септик удача</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топас</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топаэро</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Комплектующие</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      БИОПРЕПАРАТЫ 
+                    </div>
+                    <ul class="sidebar-drop"> 
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Аквалос</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос био и про</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос грунт</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Евролос эко</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Септик удача</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топас</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Топаэро</a>
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <a href="" class="sidebar-drop__link">Комплектующие</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <form id="price-filter" method="post" class="catalog-sidebar__price price-filter">
+                  <h3 class="catalog-sidebar__title title--second">ФИЛЬТР ПО ЦЕНЕ</h3>
+                  <div id="range-slider" class="price-filter__range"></div>
+                  <div id="test"></div>
+                  <div class="price-filter__inner">
+                    <div class="price-filter__row">
+                      <input type="hidden" id="price-min" value="500">
+                      <input type="hidden" id="price-max" value="3000">
+                      Цена: <span class="price-filter__min">500</span> Р - <span class="price-filter__max">3 000</span> Р
+                    </div>
+                    <button type="submit" class="price-filter__btn">ПОКАЗАТЬ</button>
+                  </div>
+                </form> 
+                <h3 class="catalog-sidebar__title title--second">ПОДБОР ПАРАМЕТРОВ</h3>
+                <div class="catalog-sidebar__inner">
+                  <div class="sidebar-spoiler active-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      ПЕРВЫЙ ПАРАМЕТР 
+                    </div>
+                    <ul class="sidebar-drop sidebar--padding"> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-checkbox_1" id="sidebar-checkbox_1" class="sidebar-drop__check" >
+                          <label for="sidebar-checkbox_1" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>
+                      </li> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-checkbox_2" id="sidebar-checkbox_2" class="sidebar-drop__check" >
+                          <label for="sidebar-checkbox_2" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-checkbox_3" id="sidebar-checkbox_4" class="sidebar-drop__check" >
+                          <label for="sidebar-checkbox_3" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-checkbox_4" id="sidebar-checkbox_4" class="sidebar-drop__check" >
+                          <label for="sidebar-checkbox_4" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-checkbox_5" id="sidebar-checkbox_5" class="sidebar-drop__check" >
+                          <label for="sidebar-checkbox_5" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-checkbox_6" id="sidebar-checkbox_6" class="sidebar-drop__check" >
+                          <label for="sidebar-checkbox_6" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-checkbox_7" id="sidebar-checkbox_7" class="sidebar-drop__check" >
+                          <label for="sidebar-checkbox_7" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-checkbox_8" id="sidebar-checkbox_8" class="sidebar-drop__check" >
+                          <label for="sidebar-checkbox_8" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                    </ul>
+                  </div> 
+                  <div class="sidebar-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      ВТОРОЙ ПАРАМЕТР 
+                    </div>
+                    <ul class="sidebar-drop sidebar--padding"> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-second_1" id="sidebar-second_1" class="sidebar-drop__check" >
+                          <label for="sidebar-second_1" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>
+                      </li> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-second_2" id="sidebar-second_2" class="sidebar-drop__check" >
+                          <label for="sidebar-second_2" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-second_3" id="sidebar-second_3" class="sidebar-drop__check" >
+                          <label for="sidebar-second_3" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-second_4" id="sidebar-second_4" class="sidebar-drop__check" >
+                          <label for="sidebar-second_4" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-second_5" id="sidebar-second_5" class="sidebar-drop__check" >
+                          <label for="sidebar-second_5" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-second_6" id="sidebar-second_6" class="sidebar-drop__check" >
+                          <label for="sidebar-second_6" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-second_7" id="sidebar-second_7" class="sidebar-drop__check" >
+                          <label for="sidebar-second_7" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-second_8" id="sidebar-second_8" class="sidebar-drop__check" >
+                          <label for="sidebar-second_8" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      ТРЕТИЙ ПАРАМЕТР 
+                    </div>
+                    <ul class="sidebar-drop sidebar--padding"> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-third_1" id="sidebar-third_1" class="sidebar-drop__check" >
+                          <label for="sidebar-third_1" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>
+                      </li> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-third_2" id="sidebar-third_2" class="sidebar-drop__check" >
+                          <label for="sidebar-third_2" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-third_3" id="sidebar-third_3" class="sidebar-drop__check" >
+                          <label for="sidebar-third_3" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-third_4" id="sidebar-third_4" class="sidebar-drop__check" >
+                          <label for="sidebar-third_4" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-third_5" id="sidebar-third_5" class="sidebar-drop__check" >
+                          <label for="sidebar-third_5" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-third_6" id="sidebar-third_6" class="sidebar-drop__check" >
+                          <label for="sidebar-third_6" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-third_7" id="sidebar-third_7" class="sidebar-drop__check" >
+                          <label for="sidebar-third_7" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-third_8" id="sidebar-third_8" class="sidebar-drop__check" >
+                          <label for="sidebar-third_8" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      ЧЕТВЕРТЫЙ ПАРАМЕТР 
+                    </div>
+                    <ul class="sidebar-drop sidebar--padding"> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fourth_1" id="sidebar-fourth_1" class="sidebar-drop__check" >
+                          <label for="sidebar-fourth_1" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>
+                      </li> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fourth_2" id="sidebar-fourth_2" class="sidebar-drop__check" >
+                          <label for="sidebar-fourth_2" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fourth_3" id="sidebar-fourth_3" class="sidebar-drop__check" >
+                          <label for="sidebar-fourth_3" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fourth_4" id="sidebar-fourth_4" class="sidebar-drop__check" >
+                          <label for="sidebar-fourth_4" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fourth_5" id="sidebar-fourth_5" class="sidebar-drop__check" >
+                          <label for="sidebar-fourth_5" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fourth_6" id="sidebar-fourth_6" class="sidebar-drop__check" >
+                          <label for="sidebar-fourth_6" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fourth_7" id="sidebar-fourth_7" class="sidebar-drop__check" >
+                          <label for="sidebar-fourth_7" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fourth_8" id="sidebar-fourth_8" class="sidebar-drop__check" >
+                          <label for="sidebar-fourth_8" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar-spoiler">
+                    <div class="sidebar-spoiler__title">
+                      ПЯТЫЙ ПАРАМЕТР 
+                    </div>
+                    <ul class="sidebar-drop sidebar--padding"> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fifth_1" id="sidebar-fifth_1" class="sidebar-drop__check" >
+                          <label for="sidebar-fifth_1" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>
+                      </li> 
+                      <li class="sidebar-drop__item"> 
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fifth_2" id="sidebar-fifth_2" class="sidebar-drop__check" >
+                          <label for="sidebar-fifth_2" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fifth_3" id="sidebar-fifth_3" class="sidebar-drop__check" >
+                          <label for="sidebar-fifth_3" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label> 
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fifth_4" id="sidebar-fifth_4" class="sidebar-drop__check" >
+                          <label for="sidebar-fifth_4" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fifth_5" id="sidebar-fifth_5" class="sidebar-drop__check" >
+                          <label for="sidebar-fifth_5" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fifth_6" id="sidebar-fifth_6" class="sidebar-drop__check" >
+                          <label for="sidebar-fifth_6" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fifth_7" id="sidebar-fifth_7" class="sidebar-drop__check" >
+                          <label for="sidebar-fifth_7" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                      <li class="sidebar-drop__item">
+                        <label class="sidebar-drop__checkbox">
+                          <input type="checkbox" name="sidebar-fifth_8" id="sidebar-fifth_8" class="sidebar-drop__check" >
+                          <label for="sidebar-fifth_8" class="sidebar-drop__box"></label>
+                          <span class="sidebar-drop__text">Атрибут один</span>
+                        </label>  
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="consult-row consult-row--nomargin">
+          <div class="container">
+            <div class="consult-row__wrap">
+              <div class="consult-row__inner">
+                <h2 class="consult-row__title">Нужна консультация? Обращайтесь к нам!</h2>
+                <div class="consult-row__subtitle">Действие параллельно аннигилирует феноменологический импульс</div>
+              </div>
+              <button type="button" class="consult-row__btn modal-feedback-js">ЗАКАЗАТЬ ЗВОНОК</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      @@include('html/popup.html', {})
+    </div> 
+    <script src="js/lib/webp.js"></script> 
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/noUIslider.min.js"></script> 
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

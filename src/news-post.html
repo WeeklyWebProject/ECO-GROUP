@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+  @@include('html/head.html', { "title": "Новости и статьи" })
+  <body>
+    <div id="wrapper" class="wrapper no-home">
+      @@include('html/header.html', {}) 
+      <main>  
+        <div class="info-page">
+          <div class="container">
+            <div class="info-page__wrap">
+              <h2 class="page-title">НОВОСТИ И СТАТЬИ</h2> 
+              <ul class="breadcrumbs"> 
+                <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link">Главная</a>
+                </li>  
+                <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link">Новости и статьи</a>
+                </li>  
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__text">Традиционное участие в выставке и заслуженная награда</span>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>    
+        <div class="news-post">
+            <div class="container">
+                <div class="news-post__wrap">
+                    <div class="news-post__inner">
+                        <div class="news-post__left">
+                            <div class="news-post__img">
+                                <img src="./img/news/4.png" alt="Традиционное участие в выставке и заслуженная награда">
+                            </div>
+                        </div>
+                        <div class="news-post__right">
+                            <div class="news-post__header">
+                                <div class="news-post__date">01.01.2023</div>
+                                <a href="#" class="news-post__prev"><< Предыдущая новость </a>
+                                <a href="#" class="news-post__next">Следующая новость >></a>
+                            </div>
+                            <h1 class="news-post__title">
+                                Традиционное участие в выставке и заслуженная награда
+                            </h1>
+                            <div class="news-post__img post__img--mobile">
+                                <img src="./img/news/4.png" alt="Традиционное участие в выставке и заслуженная награда">
+                            </div>
+                            <p class="news-post__text">
+                                3000 посетителей в этом году приняли участие в выставке.
+                                Состоялся III Градостроительный форум Тюменской области на тему «Современное строительство и архитектура: развитие строительной отрасли; реализация национальных проектов в регионе».
+                            </p>
+                            <p class="news-post__text">
+                                На форуме  работали экспертные секции на самые актуальные темы современного строительства:  о формировании комфортной городской среды, комплексном освоении территорий, цифровизации сферы ЖКХ, а также взаимодействии бизнеса и власти
+                                в строительной отрасли.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-post__desc"> 
+                        <p class="news-post__text">
+                            К обсуждению этих тем были приглашены эксперты строительной отрасли, специалисты главного управления строительства, администрации г. Тюмени и Тюменского района, застройщики, девелоперы, представители общественных организаций и банковской сферы. Также на площадке одновременно с форумом будет проходить XXVIII специализированная выставка «Строительство и архитектура. Дорожная, строительная техника и технологии».
+                        </p>
+                        <p class="news-post__text">
+                            Наша компания представила на форуме иновационную разработку в сфере очистки сточных вод
+                        </p>
+                        <p class="news-post__text">
+                            Предлагаем Вашему вниманию репортаж Тюменского телевидения со стенда AQUALOS на Градостроительном форуме. Интервью с главным инженером компании AQUALOS, общая информация о технологии аэрационной очистки стоков, перечисление преимуществ именно такого метода-довольно емкое наполнение, несмотря на небольшую продолжительность ролика. Что лишний раз подчёркивает, что один из главных козырей продукции AQUALOS это простота в понимании и использовании.
+                        </p>
+                        <p class="news-post__text">
+                            <a href="https://vk.com/tyumentime?w=wall-27760724_150939" target="_blank">https://vk.com/tyumentime?w=wall-27760724_150939</a>
+                        </p>
+                        <p class="news-post__text">
+                            Основная цель  ежегодного участия нашей компании  совместно с нашими партнерами –  это развитие строительной отрасли Тюменской области и внедрение инновационных технологий в городскую среду.
+                            Ведь наша миссия- обеспечить экологию и комфортное проживание  людей проживающих за городом.
+                        </p>
+                    </div>
+                    <div class="news-post__row">
+                        <a href="#" class="news-post__prev"><< Предыдущая новость </a>
+                        <a href="#" class="news-post__next">Следующая новость >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="consult-row consult-row--nomargin">
+          <div class="container">
+            <div class="consult-row__wrap">
+              <div class="consult-row__inner">
+                <h2 class="consult-row__title">Нужна консультация? Обращайтесь к нам!</h2>
+                <div class="consult-row__subtitle">Действие параллельно аннигилирует феноменологический импульс</div>
+              </div>
+              <button type="button" class="consult-row__btn modal-feedback-js">ЗАКАЗАТЬ ЗВОНОК</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      @@include('html/popup.html', {})
+    </div> 
+    <script src="js/lib/webp.js"></script> 
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/noUIslider.min.js"></script> 
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

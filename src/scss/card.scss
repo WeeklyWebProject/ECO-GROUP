@@ -1,0 +1,747 @@
+/*-------- СТИЛИ ДЛЯ КАРТОЧКИ ТОВАРА - НАЧАЛО ------------*/
+.card {
+    margin-bottom: 80px;
+
+    // .card__wrap
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .card__top
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 81px;
+        border-bottom: 1px solid #ebebeb;
+        @media (max-width: 576px) {
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+    }
+
+    // .card__left
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 17px);
+        @media (max-width: 576px) { 
+            width: 100%;
+        }
+    }
+ 
+
+    // .card__preview
+
+    &__preview { 
+        position: relative;
+        width: 579px;
+        height: 580px;
+        border: 1px solid #dedede;
+        background-color: #ffffff;
+        margin-bottom: 18px;
+        padding: 63px 0 33px;
+        @media (max-width: 576px) { 
+            width: 100%;
+            height: 460px;
+            border: 0;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .card-preview__img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            @media (max-width: 576px) {  
+                height: 460px;
+            }
+            picture {
+                @media (max-width: 576px) {  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    // padding: 50px;
+                }
+            }
+            img  {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50%;
+                @media (max-width: 576px) {  
+                    width: 70%;
+                    height: 95%;
+                }
+            }
+        }
+        .slick-list {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .slick-arrow{
+            display: none;
+            font-size: 0;
+            background: transparent;
+            @media (max-width: 576px) { 
+                display: block;
+                position: absolute;
+                top: 50%;
+                &:before{ 
+                    content: '';
+                    position: relative;
+                    width: 12px;
+                    height: 21px;
+                    color: #767676;
+                    font-family: "Font Awesome";
+                    font-size: 36px;
+                    font-weight: 400; 
+                    line-height: 30px; 
+                }
+            }
+        }
+        .slick-prev{
+            transform: translateY(-50%);
+            left: 0;
+        }
+        .slick-next{
+            transform: translateY(-50%) rotate(180deg);
+            right: 0;
+        }
+    }
+
+
+    // .card__tumbs
+
+    &__tumbs {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding: 0px 43px;
+        @media(max-width: 576px) {
+            display: none;
+        }
+    } 
+
+
+    .card-tumbs {
+
+		// .card-tumbs__img
+
+		&__img { 
+            width: 110px !important;
+            height: 110px !important;
+            border: 1px solid #dedede;
+            background-color: #ffffff;
+            padding: 16px;
+            margin: 0 9px;
+            picture {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img {
+                width: 70%;
+                height: 100%;
+                object-fit: contain;
+                object-position: 50%;
+            }
+		}
+        .slick-arrow{ 
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 50%;
+            width: 25px;
+            height: 25px;
+            font-size: 0;
+            background-color: #bcbcbc; 
+            z-index: 5;
+            &:before {
+                content: ''; 
+                position: relative;
+                display: block; 
+                color: #ffffff;
+                font-family: "Font Awesome";
+                font-size: 24px;
+                font-weight: 400; 
+                line-height: 24px; 
+            }
+            
+        }
+        .slick-prev {
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .slick-next{
+            right: 0; 
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+
+    
+    // .card__right
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 17px);
+        @media (max-width: 576px) { 
+            width: 100%;
+        }
+        
+    }
+
+    // .card__title
+
+    &__title { 
+        width: 100%; 
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 36px;
+        color: #363636;
+        padding: 40px 0px;
+        border-top: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 20px;
+        @media (max-width: 435px) { 
+            width: 100%;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        @media (max-width: 360px) { 
+            width: 100%;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+
+    // .card__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #dedede;
+        padding-top: 20px;
+        @media(max-width: 576px){ 
+            margin-bottom: 40px;
+            padding-bottom: 23px;
+        }
+    }
+
+    // .card__price
+
+    &__price {  
+        color: #2d2a2a;
+        font-family: "Myriad Pro";
+        font-size: 36px;
+        font-weight: 400; 
+        line-height: 40px; 
+        @media (max-width: 435px) {  
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+
+    // .card__box
+
+    &__box { 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .card__label
+
+    &__label {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-bottom: 10px;
+        transform: translateX(-50%);
+    }
+
+    // .card__stock
+
+    &__stock{ 
+        position: relative; 
+        color: #777777; 
+        font-size: 14px;
+        font-weight: 400;  
+        line-height: 16px;
+        &:before{
+            content: '';
+            position: absolute;
+            top: calc(50% - 4px);
+            left: -20px;
+            width: 12px;
+            height: 10px;
+            color: #4bc624;
+            font-size: 14px; 
+            font-weight: 400;
+            font-family: "Font Awesome";
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            transform: translateY(-50%);
+        }
+    }
+
+
+    // .card__order
+
+    &__order {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 201px;
+        height: 53px;  
+        color: #ffffff; 
+        font-size: 18px;
+        font-weight: 700; 
+        text-align: center; 
+        background-color: #43b02a;
+        @media (max-width: 435px) {  
+            width: 140px;
+            height: 43px;   
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px; 
+        }
+    } 
+
+    // .card__paramets
+
+    &__paramets {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        @media(max-width: 576px){
+            display: none;
+        }
+    } 
+
+    /*--------БЛОК С ХАРАКЕТРИСТИКАМИ ТОВАРА В КАРТОЧКЕ ТОВАРА  ------------*/
+    .card-paramets {
+
+            // .card-paramets__title
+
+            &__title { 
+                color: #2d2a2a;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 700; 
+                line-height: 15px; 
+                margin-bottom: 27px;
+            }
+
+            // .card-paramets__inner
+
+            &__inner {
+            }
+
+            // .card-paramets__item
+
+            &__item {  
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #777777;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 400; 
+                line-height: 15px; 
+                margin-bottom: 15px;
+                &:nth-last-child(1){
+                    margin-bottom: 0;
+                }
+            }
+
+            // .card-paramets__text
+
+            &__text {
+            }
+
+            // .card-paramets__dotted
+
+            &__dotted{
+                flex: 1 0;
+                border-bottom: 2px dotted #777777;
+                height: 0.5em;
+                margin: 0 .4em; 
+            }
+
+            // .card-paramets__value
+
+            &__value {
+            }
+    }  
+
+    /*--------БЛОК-БАННЕР ДЛЯ СКИДКИ ТОВАРА В КАРТОЧКЕ ТОВАРА  ------------*/
+
+    // .card__info
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 39px 0px 32px;
+        border: 1px solid #dedede;
+    } 
+
+    .card-banner {
+
+		// .card-banner__title
+
+		&__title {  
+            color: #2d2a2a; 
+            font-size: 14px;
+            font-weight: 700; 
+            line-height: 15px;
+            text-align: center;
+            text-decoration: underline; 
+            margin-bottom: 13px;
+            @media(max-width: 576px){
+                max-width: 270px;
+            }
+		}
+
+		// .card-banner__subtitle
+
+		&__subtitle { 
+            max-width: 340px;
+            color: #777777; 
+            font-size: 14px;
+            font-weight: 400; 
+            line-height: 15px;
+            text-align: center; 
+            margin-bottom: 27px;
+		}
+
+		// .card-banner__discount
+
+		&__discount {  
+            color: #43b02a; 
+            font-size: 30px;
+            font-weight: 700; 
+            line-height: 30px; 
+		}
+    } 
+
+    /*--------ТАБЫ  В КАРТОЧКЕ ТОВАРА  ------------*/
+
+    // .card__bottom
+
+    &__bottom { 
+        padding-top: 10px;
+        padding-bottom: 59px;
+        border-bottom: 1px solid #ebebeb;
+        @media(max-width: 576px){
+            display: none;
+        }
+    }
+
+    .card-tabs {
+
+		// .card-tabs__row
+
+		&__row {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between;
+            max-width: 500px;
+            margin:0 auto;
+            margin-bottom: 34px;
+		}
+
+		// .card-tabs__btn
+
+		&__btn {  
+            position: relative;
+            font-size: 16px;
+            font-weight: 700; 
+            line-height: 16px; 
+            text-transform: uppercase;
+            color: #2d2a2a; 
+            cursor: pointer;
+            transition: .35s ease;
+            &:hover { 
+                color: rgba(45, 42, 42, .65); 
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: -11px;
+                left: 0;
+                width: 0; 
+                height: 2px;
+                background-color: #43b02a;
+                transition: all .35s ease-out;
+            }
+		}
+
+        .tabs__btn--active { 
+            &:before { 
+                width: 100%;
+                transition: all .35s ease-in;
+            }
+        }   
+
+		// .card-tabs__inner
+
+		&__inner {
+		}
+
+		// .card-tabs__panel
+
+		&__panel {
+            display: none; 
+            P {
+                
+            color: #2d2a2a; 
+            font-size: 14px;
+            font-weight: 400; 
+            line-height: 16px; 
+            margin-bottom: 24px;
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
+            }
+		}
+
+        .tabs__panel--active {
+            display: block;
+        }
+    } 
+
+    // .card__spoiler
+
+    &__spoiler{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-spoiler {
+
+		// .card-spoiler__item
+
+		&__item {
+            padding: 20px 0px;
+            border-top: 1px solid #eaeaea;
+            &:nth-last-child(1){ 
+                border-bottom: 1px solid #eaeaea;
+            }
+		}
+
+		// .card-spoiler__title
+
+		&__title { 
+            position: relative;
+            width: 100%;
+            color: #302e2e; 
+            font-size: 16px;
+            font-weight: 700; 
+            line-height: 16px; 
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0; 
+                color: #302e2e; 
+                font-family: "Font Awesome";
+                font-size: 13px; 
+                font-weight: 800; 
+                transform: translateY(-50%);
+                transition: .35s ease;
+            }
+		}
+
+		// .card-spoiler__inner
+
+		&__inner {
+            max-height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .35s ease-out;
+            p {  
+                color: #302e2e; 
+                font-size: 14px;
+                font-weight: 400; 
+                line-height: 16px; 
+                margin-bottom: 25px;
+                &:nth-last-child(1){
+                    margin-bottom: 0;
+                }
+            }
+		}
+    }
+    .card-spoiler--active {
+        .card-spoiler__title {
+            &:before { 
+                transform: translateY(-50%) rotate(180deg); 
+            }
+        }
+        .card-spoiler__inner { 
+            padding-top: 27px;
+            max-height: 100vh;
+            visibility: visible;
+            opacity: 1;
+            transition: all .35s ease-in;
+        }
+    }
+
+
+} 
+/*-------- СТИЛИ ДЛЯ КАРТОЧКИ ТОВАРА - КОНЕЦ ------------*/
+
+/*-------- СЛАЙДЕР С ПОХОЖИМИ ТОВАРАМИ ------------*/
+
+.similar-products {
+    margin-bottom: 77px;
+
+    // .similar-products__title
+
+    &__title {  
+        font-size: 24px;
+        font-weight: 500; 
+        line-height: normal;
+        color: #2d2a2a;  
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 58px;
+    }
+
+    // .similar-products__wrap
+
+    &__wrap {
+        position: relative;
+        display: flex;
+    }
+
+    // .similar-products__item
+
+    &__item { 
+        width: calc(100% / 5);
+    }
+
+    // .similar-products__img
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 225px;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50%;
+        }
+    }
+
+    // .similar-products__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .similar-products__text
+
+    &__text { 
+        color: #333333;
+        font-family: "Lato - Heavy";
+        font-size: 14px;
+        font-weight: 400; 
+        line-height: 16px;
+        text-align: center; 
+        text-transform: uppercase;
+        margin-bottom: 11px;
+    }
+
+    // .similar-products__category
+
+    &__category {  
+        color: #9e9e9e;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400; 
+        line-height: 16px;
+        text-align: center; 
+        margin-bottom: 14px;
+    }
+
+    // .similar-products__price
+
+    &__price { 
+        width: 70px;
+        height: 13px;
+        color: #43b02a;
+        font-family: "Lato - Heavy";
+        font-size: 14px;
+        font-weight: 400; 
+        line-height: 16px;
+        text-align: center; 
+        width: 100%;
+    }
+    .slick-prev{
+        left: -45px;
+        font-size: 0;
+        transform: translateY(-50%);
+        @media(max-width: 576px) {
+            left: -10px; 
+        }
+    }
+    .slick-next{
+        right: -45px;
+        font-size: 0;
+        transform: translateY(-50%) rotate(180deg); 
+        @media(max-width: 576px) {
+            right: -10px; 
+        }
+    }
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+        background: transparent;
+        &:before {
+            content: ''; 
+            width: 17px;
+            height: 28px;
+            color: #9e9e9e;
+            font-family: "Font Awesome";
+            font-size: 50px;
+            font-weight: 400;  
+            line-height: normal;
+            @media(max-width: 576px) {
+                font-size: 36px;
+            }
+        }
+    }
+}
+

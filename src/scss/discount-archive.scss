@@ -1,0 +1,108 @@
+/*-------- СТИЛИ ДЛЯ СТРАНИЦЫ ВСЕ АКЦИИ ------------*/
+
+.discount {
+    .container {
+        @media(max-width: 576px) {
+            padding: 0;
+        }
+    }
+
+    // .discount__wrap
+
+    &__wrap {
+    }
+
+    // .discount__inner
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 30px;
+        @media(max-width: 576px) {
+            margin: 0 0 30px; 
+        }
+    }
+
+    // .discount__item
+
+    &__item { 
+        position: relative;
+        width: calc((100% / 2) - 30px); 
+        height: 343px;
+        background-color: #f3f3f3;
+        margin: 0 15px 30px;
+        padding: 35px 30px 35px 30px;
+        overflow: hidden;
+        @media (max-width: 576px) {
+            width: calc(100%);
+            margin: 0 0 30px;  
+        }
+         
+    }
+
+    // .discount__label
+
+    &__label { 
+        color: #43b02a; 
+        font-size: 16px;
+        font-weight: 500; 
+        line-height: 16px; 
+        margin-bottom: 19px;
+    }
+
+    // .discount__title
+
+    &__title { 
+        color: #242424; 
+        font-size: 36px;
+        font-weight: 500; 
+        line-height: 36px; 
+        margin-bottom: 22px;
+    }
+
+    // .discount__btn
+
+    &__btn { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 117px;
+        height: 44px;
+        color: #333333;
+        font-size: 13px;
+        font-weight: 400; 
+        line-height: 13px; 
+        border-radius: 5px;
+        background: transparent;
+        border: 2px solid #d3d3d3;
+    }
+
+    // .discount__img
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @media (max-width: 440px) {
+            right: -10%;
+            bottom: -10%;
+            z-index: 2;
+            height: 57.36%;
+            width: 82.4%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                -o-object-position: top;
+                object-position: top;
+            }
+        }
+    }
+} 
+.btn--green { 
+    color: #ffffff; 
+    background-color: #43b02a;
+    border: 0;
+}

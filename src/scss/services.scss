@@ -1,0 +1,208 @@
+ /*-------- СТИЛИ СТРАНИЦЫ СО ВСЕМИ УСЛУГАМИ  ------------*/
+ .services {
+    overflow: hidden;
+    margin-bottom: 80px;
+
+    // .services__wrap
+
+    &__wrap {
+        display: flex;
+        @media (max-width: 576px) {  
+            flex-direction: column;
+        }
+    }
+
+    // .services__left
+
+    &__left {
+        width: 561px;
+        @media (max-width: 576px) { 
+            width: 100%;
+            margin-bottom: 41px;
+        }
+    }
+
+    // .services__title
+
+    &__title {
+        display: flex;
+        flex-direction: column; 
+        color: #333333; 
+        font-size: 36px;
+        font-weight: 500; 
+        line-height: 36px; 
+        margin-bottom: 31px;
+    }
+
+    // .services__title--top
+
+    &__title--top {
+    }
+
+    // .services__title--down
+
+    &__title--down {  
+        color: #43b02a; 
+    }
+
+    // .services__desc
+
+    &__desc {  
+        color: #242424; 
+        font-size: 15px;
+        font-weight: 400; 
+        line-height: 22px; 
+        margin-bottom: 37px;
+    }
+
+    // .services__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #dadada;
+        @media (max-width: 576px) {
+            margin: 0 -30px; 
+            border-left: 0;
+            border-right: 0;
+        }
+        
+        @media (max-width: 474px) {
+            margin: 0 -27px; 
+        }
+        @media (max-width: 413px) {
+            margin: 0 -24px; 
+        }
+        @media (max-width: 374px) {
+            margin: 0 -20px; 
+        }
+    }
+
+    // .services__item
+
+    &__item { 
+        padding: 11px 40px 14px;
+        border-bottom: 1px solid #dadada;
+        &:nth-last-child(1){
+            border-bottom: 0;
+        }
+        @media (max-width: 576px) {
+            padding: 11px 30px 14px; 
+        }
+        @media (max-width: 474px) {
+            padding: 11px 27px 14px; 
+        }
+        @media (max-width: 413px) {
+            padding: 11px 24px 14px; 
+        }
+        @media (max-width: 374px) {
+            padding: 11px 20px 14px; 
+        }
+    }
+
+    // .services__link
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    // .services__icon
+
+    &__icon {
+        display: flex;
+        flex-shrink: 0;
+        width: 53px;
+        height: 52px;
+        margin-right: 17px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: 50%;
+        }
+    }
+
+    // .services__text
+
+    &__text { 
+        color: #777777; 
+        font-size: 16px;
+        font-weight: 400; 
+        line-height: 16px; 
+        @media (max-width: 460px) { 
+            font-size: 14px;
+        }
+    }
+
+    // .services__right
+
+    &__right {
+        position: relative;
+        width: calc(100% - 561px);
+        @media (max-width: 576px) { 
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% + 60px);
+            margin: 0 -30px; 
+        } 
+        
+        @media (max-width: 474px) {
+            width: calc(100% + 54px);
+            margin: 0 -27px; 
+        }
+        @media (max-width: 413px) {
+            width: calc(100% + 48px);
+            margin: 0 -24px; 
+        }
+        @media (max-width: 374px) { 
+            width: calc(100% + 40px);
+            margin: 0 -20px; 
+        }
+    } 
+ 
+
+    // .services__img
+
+    &__img {
+        position: absolute;
+        width: 395px;
+        height: 395px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50%;
+        }
+        @media (max-width: 576px) {
+            width: calc((100% / 2) - 12px);
+            height: 227px; 
+            position: relative;
+        }
+        @media (max-width: 375px) {
+            width: calc((100% / 2) - 12px);
+            height: 185px; 
+            position: relative;
+        }
+    } 
+
+    .services-img--first {
+        top: 0;
+        right: 0;
+        z-index: 1;
+        @media (max-width: 576px) { 
+            top: auto;
+            right: auto;
+        }
+    }
+    .services-img--second {
+        top: 295px;
+        right: 156px;
+        z-index: 2;
+        @media (max-width: 576px) { 
+            top: auto;
+            right: auto;
+        }
+    }
+
+} 
